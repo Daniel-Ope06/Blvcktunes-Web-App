@@ -1,1 +1,29 @@
-<p>navbar works!</p>
+<nav class="navbar">
+    <a class="navbar-brand" routerLink="/">
+        <img class="logo" src="assets/images/logo-with-name.jpg" aria-label="Logo">
+    </a>
+
+    <div class="collapse navbar-collapse" [ngClass]="{ 'show': isNavbarOpen }">
+        <ul class="navbar-items">
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/about-us">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/pricing">Pricing</a>
+          </li>
+        </ul>
+
+        <div class="navbar-btns">
+            <a class="nav-link" routerLink="/login">
+                <button class="nav-btn login-btn" type="button">Login</button>
+            </a>
+            <a class="nav-link" routerLink="/sign-up">
+                <button class="nav-btn sign-up-btn" type="button">Sign Up</button>
+            </a>
+        </div>
+    </div>
+
+</nav>

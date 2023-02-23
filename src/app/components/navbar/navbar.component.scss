@@ -1,0 +1,94 @@
+$brand-white: #FFFF;
+$brand-purple: #940CFF;
+$brand-black: #232938;
+$brand-font-1: 'Josefin Sans', sans-serif;
+$brand-font-2: 'Lato', sans-serif;
+
+.navbar{
+    position: fixed;
+    top: 0;
+    height: 96px;
+    width: 100%;
+    background-color: $brand-white;
+    z-index: 9999;
+
+    .logo{
+        position: absolute;
+        top: 16.7%;
+        left: 10%;
+        transform: scale(0.25);
+        transform-origin: top left;
+    }
+
+    .navbar-items{
+        position: absolute;
+        top: 25%;
+        left: 37%;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px 15px;
+
+        text-align: center;
+        font-family: $brand-font-1;
+        font-size: 1rem;
+        font-weight: 500;
+        font-style: normal;
+        list-style-type: none;
+        color: $brand-black;
+
+        .nav-item {
+            margin-right: 3rem;
+
+            .nav-link {
+              color: $brand-black;
+              text-decoration: none;
+            }
+        }
+    }
+
+    .navbar-btns{
+        position: absolute;
+        top: 20.8%;
+        left: 70%;
+
+        .nav-btn{
+            font-size: 1rem;
+            font-weight: 700;
+            font-style: normal;
+            line-height: 1rem;
+            letter-spacing: 0.02em;
+            font-family: $brand-font-1;
+
+            padding: 20px 48px;
+            border-radius: 100px;
+            margin-right: 10px;
+
+            cursor: pointer;
+            transition: background-color 0.2s ease-in-out;
+
+            // On hover, darken the background color
+            &:hover {
+                background-color: darken($brand-purple, 10%);
+                color: $brand-white;
+            }
+        }
+
+        .login-btn{
+            background-color: $brand-white;
+            border: 1px solid $brand-purple;
+            color: $brand-purple;
+        }
+
+        .sign-up-btn{
+            background-color: $brand-purple;
+            border: none;
+            color: $brand-white;
+        }
+    }
+
+
+}
+
+
