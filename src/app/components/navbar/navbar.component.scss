@@ -88,7 +88,99 @@ $brand-font-2: 'Lato', sans-serif;
         }
     }
 
+    .navbar-toggler{
+        background: transparent;
+        border: none;
+        position: absolute;
+        top: 40%;
+        left: 80%;
 
+    }
+}
+
+.navbar-toggler{
+    display: none;
+}
+
+// for 1024px laptop screens
+@media screen and (max-width: 1024px){
+    .navbar{
+        .navbar-btns{
+            .nav-btn{
+                padding: 20px 34px;
+            }
+        }
+    }
+}
+
+// for tablet screens
+@media screen and (max-width: 768px){
+    .navbar{
+        .logo{
+            left: 5%;
+        }
+
+        .navbar-toggler{
+            display: flex;
+            left: 90%;
+        }
+
+        .navbar-collapse{
+            position: fixed;
+            top: 96px;
+            right: -100%;
+            transition: right 0.3s ease-out;
+
+            width: 80%;
+            height: 100%;
+            background-color: $brand-white;
+            border-top: solid 2px $brand-purple;
+
+            &.open {
+                right: 0;
+            }
+
+            .navbar-items{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+
+                top: 0%;
+                left: 0%;
+
+                .nav-item {
+                    margin-right: 0rem;
+                    margin-bottom: 2rem;
+                }
+            }
+
+            .navbar-btns{
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                width: 90%;
+
+                left: 15px;
+                margin-top: 2rem;
+                border-top: solid 1px lighten($brand-black, 50%);
+                padding-top: 2rem;
+
+                .nav-btn{
+                    padding: 10px 24px;
+                }
+            }
+        }
+
+    }
+}
+
+// for mobile screens
+@media screen and (max-width: 480px){
+    .navbar{
+        .navbar-toggler{
+            left: 85%;
+        }
+    }
 }
 
 

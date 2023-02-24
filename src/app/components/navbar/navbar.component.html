@@ -3,7 +3,27 @@
         <img class="logo" src="assets/images/logo-with-name.jpg" aria-label="Logo">
     </a>
 
-    <div class="collapse navbar-collapse" [ngClass]="{ 'show': isNavbarOpen }">
+    <button class="navbar-toggler" type="button" aria-label="Hamburger Icon" (click)="toggleNavbar()">
+      <svg width="32" height="23" viewBox="0 0 32 23" fill="none" xmlns="http://www.w3.org/2000/svg" *ngIf="!isNavbarOpen">
+        <rect width="32" height="2.28571" rx="1.14286" fill="#9511FD"/>
+        <rect y="10.2857" width="32" height="2.28571" rx="1.14286" fill="#9511FD"/>
+        <rect y="20.5714" width="32" height="2.28571" rx="1.14286" fill="#9511FD"/>
+      </svg>
+
+      <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" *ngIf="isNavbarOpen">
+        <g clip-path="url(#clip0_30_75)">
+          <path d="M28.9144 1.60078L2.17293 28.3423C1.60489 28.9103 1.60489 29.8313 2.17293 30.3993C2.74096 30.9673 3.66193 30.9673 4.22997 30.3993L30.9715 3.65782C31.5395 3.08978 31.5395 2.16881 30.9715 1.60078C30.4034 1.03274 29.4825 1.03274 28.9144 1.60078Z" fill="#9511FD"/>
+          <path d="M30.9715 28.3422L4.23006 1.60072C3.66202 1.03269 2.74105 1.03269 2.17302 1.60072C1.60498 2.16876 1.60498 3.08973 2.17302 3.65776L28.9145 30.3993C29.4825 30.9673 30.4035 30.9673 30.9715 30.3993C31.5396 29.8312 31.5396 28.9103 30.9715 28.3422Z" fill="#9511FD"/>
+        </g>
+        <defs>
+          <clipPath id="clip0_30_75">
+            <rect width="32" height="32" fill="white"/>
+          </clipPath>
+        </defs>
+      </svg>
+    </button>
+
+    <div class="navbar-collapse" [ngClass]="{ 'open': isNavbarOpen }">
         <ul class="navbar-items">
           <li class="nav-item">
             <a class="nav-link" routerLink="/about-us">About Us</a>
