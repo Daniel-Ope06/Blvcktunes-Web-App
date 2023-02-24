@@ -79,6 +79,27 @@ $brand-font-2: 'Lato', sans-serif;
 }
 
 
+// for 1024px laptop screens
+@media screen and (max-width: 1024px){
+    .hero-section{
+        .hero-content{
+            .tagline{
+                font-size: 3.5rem;
+            }
+    
+            .smaller-tagline{
+                font-size: 1rem;
+            }
+    
+            .get-started-btn{
+                font-size: 1rem;
+                padding: 1.875rem 4.5rem;
+            }
+        }
+    }
+}
+
+
 // for tablet screens
 @media screen and (max-width: 768px){
     .hero-section{
