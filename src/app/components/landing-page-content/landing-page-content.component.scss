@@ -1,0 +1,72 @@
+$brand-white: #FFFF;
+$brand-purple: #940CFF;
+$brand-black: #232938;
+$brand-font: 'Josefin Sans', sans-serif;
+
+.page-content{
+    height: 1822px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+
+    color: $brand-black;
+    font-family: $brand-font;
+
+    .about-us{
+        width: 84.4%;
+        height: 642px;
+        margin-top: 150px;
+
+        display: grid;
+        grid-template-columns: 47.5% auto;
+        grid-template-rows: 100%;
+        column-gap: 116px;
+        align-items: center;
+
+        .about-us-content{
+            h1{
+                font-size: 4rem;
+                font-weight: 600;
+                letter-spacing: -0.03em;
+            }
+
+            p{
+                font-size: 1.5rem;
+                font-weight: 400;
+                line-height: 130%;
+                margin-top: 0;
+            }
+
+            .get-started-btn{
+                background-color: $brand-purple;
+                border-radius: 6.25rem;
+                border: none;
+                padding: 1.875rem 6.25rem;
+                margin-top: 3.125rem;
+    
+                font-size: 1.25rem;
+                font-weight: 700;
+                line-height: 120%;
+                color: $brand-white;
+                font-family: $brand-font;
+                text-transform: capitalize;
+    
+                cursor: pointer;
+                transition: background-color 0.2s ease-in-out;
+    
+                // On hover, darken the background color
+                &:hover {
+                    background-color: darken($brand-purple, 10%);
+                }
+            }
+        }
+
+        .about-us-image{
+            transform: scale(0.25);
+            transform-origin: left;
+        }
+    }
+}
+
