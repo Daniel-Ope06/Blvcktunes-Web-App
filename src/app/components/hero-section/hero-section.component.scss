@@ -1,7 +1,6 @@
 $brand-white: #FFFF;
 $brand-purple: #940CFF;
-$brand-font-1: 'Josefin Sans', sans-serif;
-$brand-font-2: 'Lato', sans-serif;
+$brand-font: 'Josefin Sans', sans-serif;
 
 
 .hero-section{
@@ -28,7 +27,7 @@ $brand-font-2: 'Lato', sans-serif;
 
         width: 90%;
         text-align: center;
-        font-family: $brand-font-1;
+        font-family: $brand-font;
         font-style: normal;
         color: $brand-white;
 
@@ -64,7 +63,7 @@ $brand-font-2: 'Lato', sans-serif;
             font-weight: 700;
             line-height: 120%;
             color: $brand-white;
-            font-family: $brand-font-2;
+            font-family: $brand-font;
             text-transform: capitalize;
 
             cursor: pointer;

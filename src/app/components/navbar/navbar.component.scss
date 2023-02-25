@@ -1,8 +1,7 @@
 $brand-white: #FFFF;
 $brand-purple: #940CFF;
 $brand-black: #232938;
-$brand-font-1: 'Josefin Sans', sans-serif;
-$brand-font-2: 'Lato', sans-serif;
+$brand-font: 'Josefin Sans', sans-serif;
 
 .navbar{
     position: fixed;
@@ -31,7 +30,7 @@ $brand-font-2: 'Lato', sans-serif;
         padding: 0px 15px;
 
         text-align: center;
-        font-family: $brand-font-1;
+        font-family: $brand-font;
         font-size: 1rem;
         font-weight: 500;
         font-style: normal;
@@ -59,7 +58,7 @@ $brand-font-2: 'Lato', sans-serif;
             font-style: normal;
             line-height: 1rem;
             letter-spacing: 0.02em;
-            font-family: $brand-font-1;
+            font-family: $brand-font;
 
             padding: 20px 48px;
             border-radius: 100px;
