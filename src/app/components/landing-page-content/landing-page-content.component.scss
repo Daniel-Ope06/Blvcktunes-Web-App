@@ -5,11 +5,10 @@ $brand-font: 'Josefin Sans', sans-serif;
 
 .page-content{
     height: 1822px;
-
+    background-color: $brand-white;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0px;
 
     color: $brand-black;
     font-family: $brand-font;
@@ -22,7 +21,7 @@ $brand-font: 'Josefin Sans', sans-serif;
         display: grid;
         grid-template-columns: 47.5% auto;
         grid-template-rows: 100%;
-        column-gap: 116px;
+        column-gap: 9.54%;
         align-items: center;
 
         .about-us-content{
@@ -66,6 +65,92 @@ $brand-font: 'Josefin Sans', sans-serif;
         .about-us-image{
             transform: scale(0.25);
             transform-origin: left;
+        }
+    }
+}
+
+// for 1024px laptop screens
+@media screen and (max-width: 1024px){
+    .page-content{
+        .about-us{
+            grid-template-columns: 40% auto;
+
+            .about-us-content{
+                h1{
+                    font-size: 3rem;
+                }
+
+                p{
+                    font-size: 1rem;
+                }
+
+                .get-started-btn{
+                    padding: 1.875rem 4.5rem;
+                }
+
+            }
+
+            .about-us-image{
+                transform: scale(0.2);
+            }
+        }
+    }
+}
+
+// for tablet screens
+@media screen and (max-width: 768px){
+    .page-content{
+        height: max-content;
+        .about-us{
+            height: 1174px;
+            grid-template-columns: 100%;
+            grid-template-rows: 642px 382px;
+
+            .about-us-content{
+                h1{
+                    text-align: center;
+                }
+
+                p{
+                    text-align: justify;
+                }
+
+                .get-started-btn{
+                    padding: 1rem 1.75rem;
+                    position: absolute;
+                    right: 8%;
+                }
+            }
+
+            .about-us-image{
+                grid-row-start: 1;
+                transform: scale(1);
+                margin-left: auto;
+                margin-right: auto;
+                width: 80%;
+            }
+        }
+    }
+
+}
+
+// for mobile screens
+@media screen and (max-width: 480px){
+    .page-content{
+        .about-us{
+            height: 800px;
+            margin-top: 50px;
+            grid-template-rows: 386px 300px;
+
+            .about-us-content{
+                h1{
+                    font-size: 1.5rem;
+                }
+
+                .get-started-btn{
+                    padding: 1rem 1.5rem;
+                }
+            }
         }
     }
 }
