@@ -67,6 +67,68 @@ $brand-font: 'Josefin Sans', sans-serif;
             transform-origin: left;
         }
     }
+
+    .why-blvcktunes{
+        width: 84.4%;
+        height: 634px;
+        margin-top: 150px;
+
+        display: grid;
+        grid-template-columns: 56% auto;
+        grid-template-rows: 100%;
+        align-items: center;
+
+        .why-blvcktunes-image{
+            transform: scale(0.25);
+            transform-origin: left;
+            margin-top: 30%;
+        }
+
+        .why-blvcktunes-content{
+            h1{
+                font-size: 4rem;
+                font-weight: 600;
+                letter-spacing: -0.03em;
+            }
+
+            ul{
+                padding: 0;
+                margin: 0;
+            }
+
+            li{
+                display: grid;
+                grid-template-columns: 25% auto;
+                grid-template-rows: 100%;
+
+                .item-icon{
+                    position: relative;
+                    top: 0;
+                    width: 100%;
+                }
+
+                .item-description{
+                    font-family: 'Josefin Sans';
+                    color: $brand-black;
+
+                    h1{
+                        font-weight: 600;
+                        font-size: 1.25rem;
+                        line-height: 120%;
+                        text-transform: capitalize;
+                    }
+
+                    p{
+                        font-weight: 400;
+                        font-size: 0.875rem;
+                        line-height: 130%;
+                        text-align: justify;
+                        opacity: 0.6;
+                    }
+                }
+            }
+        }
+    }
 }
 
 // for 1024px laptop screens
@@ -94,6 +156,28 @@ $brand-font: 'Josefin Sans', sans-serif;
                 transform: scale(0.2);
             }
         }
+
+        .why-blvcktunes{
+            grid-template-columns: 60% auto;
+
+            .why-blvcktunes-image{
+                transform: scale(0.2);
+            }
+
+            .why-blvcktunes-content{
+                h1{
+                    font-size: 3rem;
+                }
+
+                li{
+                    .item-description{
+                        h1{
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -102,7 +186,7 @@ $brand-font: 'Josefin Sans', sans-serif;
     .page-content{
         height: max-content;
         .about-us{
-            height: 1174px;
+            height: 1100px;
             grid-template-columns: 100%;
             grid-template-rows: 642px 382px;
 
@@ -130,6 +214,37 @@ $brand-font: 'Josefin Sans', sans-serif;
                 width: 80%;
             }
         }
+
+        .why-blvcktunes{
+            height: 1600px;
+            margin-top: 0;
+            grid-template-columns: 100%;
+            grid-template-rows: min-content min-content;
+
+            .why-blvcktunes-image{
+                transform: scale(1);
+                margin-left: auto;
+                margin-right: auto;
+                width: 100%;
+                margin: 0;
+            }
+
+            .why-blvcktunes-content{
+                margin: 0;
+
+                h1{
+                    text-align: center;
+                }
+
+                li{
+                    .item-description{
+                        h1{
+                            text-align: left;
+                        }
+                    }
+                }
+            }
+        }
     }
 
 }
@@ -149,6 +264,16 @@ $brand-font: 'Josefin Sans', sans-serif;
 
                 .get-started-btn{
                     padding: 1rem 1.5rem;
+                }
+            }
+        }
+
+        .why-blvcktunes{
+            height: 1100px;
+
+            .why-blvcktunes-content{
+                h1{
+                    font-size: 2rem;
                 }
             }
         }
