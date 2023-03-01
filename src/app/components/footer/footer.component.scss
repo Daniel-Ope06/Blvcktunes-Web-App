@@ -30,7 +30,7 @@ $brand-white: #FFFF;
 }
 
 // for tablet screens
-@media screen and (max-width: 768px){
+@media screen and (max-width: 900px){
     .footer-container{
         top: calc(100vh + 96px + 2800px);
     }
