@@ -1,0 +1,46 @@
+$brand-dark-purple: #191626;
+$brand-font: 'Josefin Sans', sans-serif;
+$brand-white: #FFFF;
+
+.footer-container{
+    position: absolute;
+    top: calc(100vh + 96px + 1822px);
+    width: 100%;
+    height: 96px;
+
+    font-family: $brand-font;
+    font-size: 11px;
+    font-weight: 300;
+    line-height: 180%;
+    text-align: center;
+    color: $brand-white;
+    background-color: $brand-dark-purple;
+
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 100%;
+    align-items: center;
+}
+
+// for 1024px laptop screens
+@media screen and (max-width: 1024px){
+    .footer-container{
+        top: calc(100vh + 96px + 1700px);
+    }
+}
+
+// for tablet screens
+@media screen and (max-width: 768px){
+    .footer-container{
+        top: calc(100vh + 96px + 2800px);
+    }
+}
+
+// for mobile screens
+@media screen and (max-width: 480px){
+    .footer-container{
+        top: calc(100vh + 96px + 1900px);
+        font-size: 6px;
+    }
+}
+
