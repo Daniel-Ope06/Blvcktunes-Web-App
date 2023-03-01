@@ -187,9 +187,9 @@ $brand-font: 'Josefin Sans', sans-serif;
 }
 
 // for tablet screens
-@media screen and (max-width: 900px){
+@media screen and (max-width: 1000px){
     .page-content{
-        height: 2800px;
+        height: 3300px;
         .about-us{
             height: 1100px;
             grid-template-columns: 100%;
