@@ -4,7 +4,11 @@ $brand-black: #232938;
 $brand-font: 'Josefin Sans', sans-serif;
 
 .page-content{
+    position: absolute;
+    top: calc(100vh + 96px);
+    width: 100%;
     height: 1822px;
+
     background-color: $brand-white;
     display: flex;
     flex-direction: column;
@@ -134,6 +138,7 @@ $brand-font: 'Josefin Sans', sans-serif;
 // for 1024px laptop screens
 @media screen and (max-width: 1024px){
     .page-content{
+        height: 1700px;
         .about-us{
             grid-template-columns: 40% auto;
 
@@ -184,7 +189,7 @@ $brand-font: 'Josefin Sans', sans-serif;
 // for tablet screens
 @media screen and (max-width: 768px){
     .page-content{
-        height: max-content;
+        height: 2800px;
         .about-us{
             height: 1100px;
             grid-template-columns: 100%;
@@ -252,6 +257,7 @@ $brand-font: 'Josefin Sans', sans-serif;
 // for mobile screens
 @media screen and (max-width: 480px){
     .page-content{
+        height: 1900px;
         .about-us{
             height: 800px;
             margin-top: 50px;
